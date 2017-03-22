@@ -1,0 +1,9 @@
+version: '2'
+services:
+  cassandra:
+    build: .
+    image: cassandra-test:latest
+    ports:
+      - "9042:9042"
+      - "9162:9160"
+    container_name: cassandra_asyncemail
